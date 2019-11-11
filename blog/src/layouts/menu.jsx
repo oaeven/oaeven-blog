@@ -21,8 +21,8 @@ class Menu extends React.Component {
                     <Nav className="ml-auto">
                         <Nav.Link href="#features1" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">menu_book</i> Blog</Nav.Link>
                         <Nav.Link href="#features2" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">memory</i> Projects</Nav.Link>
-                        <Nav.Link href="about" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">info</i> About</Nav.Link>
-                        <Nav.Link href="contact" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">email</i> Contact</Nav.Link>
+                        <Nav.Link href="/about/" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">info</i> About</Nav.Link>
+                        <Nav.Link href="/contact/" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">email</i> Contact</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
