@@ -9,9 +9,9 @@ import ImageService from '../components/Images/imageService';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Øyvind Arne Evensen</h1>
+    <p>Freelance Fullstack Software Developer / Solution Architect on the .NET stack</p>
+    {/* <p>Now go build something great.</p> */}
     {/* <div style={{ maxWidth: "1200px", marginBottom: "1.45rem" }}>
       <OfficeWorkerImage />
     </div> */}
