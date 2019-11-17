@@ -1,6 +1,5 @@
 import React from "react"
-import { Nav, Navbar, NavDropdown } from "react-bootstrap"
-import { Link } from "gatsby"
+import { Nav, Navbar } from "react-bootstrap"
 
 import "./../css/site.css"
 
@@ -19,8 +18,8 @@ class Menu extends React.Component {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#features1" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">menu_book</i> Blog</Nav.Link>
-                        <Nav.Link href="#features2" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">memory</i> Projects</Nav.Link>
+                        <Nav.Link href="/blog/" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">menu_book</i> Blog</Nav.Link>
+                        <Nav.Link href="/projects/" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">memory</i> Projects</Nav.Link>
                         <Nav.Link href="/about/" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">info</i> About</Nav.Link>
                         <Nav.Link href="/contact/" style={{display: "flex", alignItems: "center"}}><i className="material-icons-outlined pr-1">email</i> Contact</Nav.Link>
                         {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">

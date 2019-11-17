@@ -1,11 +1,39 @@
 /* just use css now for simplicitly */
 
-
+/* general */
+ 
 .fontsize-smaller {
     font-size: 14px;
 }
 
-.vertical-align-items {
+.compact-list {
+    list-style: circle;
+}
+
+.compact-list > li {
+    /* line-height: 0.8; */
+    margin-bottom: 0px;
+}
+
+/* spesific */
+
+.menu-vertical-align-items {
     display: flex;
     align-items: center;
+}
+
+.markdown-source-link {
+    margin-top: -1rem;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* override layout css */
+
+code {
+    font-size: 14px !important;
+}
+
+pre {
+    padding: 8px !important;
 }

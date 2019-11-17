@@ -1,11 +1,12 @@
-Copysrc/markdown-pages/post-1.md: copy code to clipboard
 ---
 path: "/blog/static-site-generator-blog"
-date: "2019-11-11"
+date: "2019-11-16"
 title: "Creating a blog site using a static site generator"
+ingress: "What tool to choose when you are a developer and want to create your own website. Something that is fun to learn from but also advanced enough so you are able to create what you want"
+draft: false
 ---
 
-# Creating a blog site using a static site generator
+<!-- # Creating a blog site using a static site generator -->
 
 I am a fullstack software developer for 12 years now, and i always had the intention to create a personal website, but never could find the time or motivation. Now that i have decided to try to go freelance i thought it was a good opportunity, to finally put down the time to make a personal webiste/blog that hopefully have a bit of professional look to it :)
 
@@ -26,6 +27,9 @@ I have to admit that my research was not very extensive. I did not really want t
 Another simple option would be to just make plain html files with some simple css and put it on one of those free webhosts you get with a domain. But that would lead to a pretty boring website and would not really showcase any of my developer skillset(im sure there are geniouses out there that can make amazing sites with just plain html, js and css). From my work im used to work with single page apps in javascript with Angular/React and not afraid to "program" the content of a website. But the issue with both a CMS and a single page app is that they both are dynamic webpages and require a running backend host to serve the pages. 
 
 ## What is a static site generator
+
+![Static Site Generator](./static-site-generator.png)
+<p class="markdown-source-link"><a href="https://www.keycdn.com/" target="_blank"  rel="noopener noreferrer">Source keycdn</a></p>
 
 I then started looking at an option that has grown in popularity and seems to be the next "new thing" for websites, something called static site generators. It seems to bring in some of the best from the CMS work and the best from the single page app world. A static site generator is pretty much what it says, it is a generator that takes the source files of a website and generates an entirely static website. That means that a typical single page app can be built with one of these tools and be hosted as entirely static files. These generators can create websites for all sorts of purposes, being photo galleries, documentation websites, blog websites etc. They utilize the JAM stack(Javascript, API, Markdown) which pretty much means its a serverless site built with javascript tools like Angular, React, Vue etc and with support for Markdown to create content. Whats best is that there are services now were we can host these websites for free like Netlify, they even pull the source code from github and deploy the site for you. No need for builds and deployments, sounds almost to good to be true.
 

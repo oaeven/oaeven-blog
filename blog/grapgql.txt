@@ -1,0 +1,31 @@
+
+find all post and add previous/next links
+
+query MyQuery {
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+    totalCount
+    edges {
+      node {
+        frontmatter {
+          title
+          path
+          date
+        }
+      }
+      previous {
+        frontmatter {
+          title
+          path
+          date
+        }
+      }
+      next {
+        frontmatter {
+          date
+          path
+          title
+        }
+      }
+    }
+  }
+}

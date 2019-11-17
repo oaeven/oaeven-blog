@@ -12,17 +12,22 @@
     "gatsby-plugin-offline": "^3.0.17",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sharp": "^2.2.34",
+    "gatsby-remark-copy-linked-files": "^2.1.30",
+    "gatsby-remark-images": "^3.1.31",
+    "gatsby-remark-prismjs": "^3.3.23",
     "gatsby-source-filesystem": "^2.1.35",
+    "gatsby-transformer-remark": "^2.6.33",
     "gatsby-transformer-sharp": "^2.3.1",
     "jquery": "^3.4.1",
+    "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.8.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "prettier": "^1.18.2"
   },
   "keywords": [
