@@ -12,8 +12,8 @@ export default function BlogPostTemplate({ data }) {
   return (
     <Layout>
       <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+        <h2>{frontmatter.title}</h2>
+        <h6 className="text-muted">{frontmatter.date}</h6>
         <div dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>

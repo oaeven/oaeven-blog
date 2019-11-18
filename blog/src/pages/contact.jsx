@@ -11,7 +11,7 @@ import ProfilePicture from "../images/profile/profile_picture_smaller.png"
 const ContactPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Contact</h1>
+    <h2>Contact</h2>
     <p>Hi, my name is Øyvind Arne Evensen</p>
 
     <img className="py-2" src={ProfilePicture} alt="Profile" />

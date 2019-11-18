@@ -30,7 +30,7 @@ const IndexPage = ({data}) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>Øyvind Arne Evensen</h1>
+      <h2>Øyvind Arne Evensen</h2>
       <p>Independent Fullstack Software Developer / Solution Architect</p>
       <div style={{ maxWidth: "500px" }}>
         <ImageService imageName="officeWorker" />

@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 const AboutPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>About</h1>
+    <h2>About</h2>
 
     <p>This blog and personal webpage was created to play around a bit, to be able to write some blog posts about usefull technical stuff and to also showcase a bit what i know and can do. The first few blogpost are about finding the right tools to make this website and some helpfull advice learned along the way developing this site. The first post starts here <Link to="/blog/static-site-generator-blog">Creating a blog</Link></p>
 

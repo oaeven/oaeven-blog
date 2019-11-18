@@ -6,9 +6,9 @@ ingress: "Gatsby is a framework for creating lightning fast static websites. Whe
 draft: false
 ---
 
-## Template or start from scratch
+<!-- ## Template or start from scratch 
 
-Gatsby is hard
+Gatsby is hard -->
 
 Templates include cluttered css code, hard to replace with your own style, they often use alot of plugins and functionality you are not interested in. And Gatsby is very opiniated so its many different ways to do things, its hard to find a template that fits everything
 
@@ -19,7 +19,7 @@ REcommendation: look at other other peoples starter examples, the pretty advance
 file conventions, pretty open to name and place files where you like except when it comes to the urls, all files in pages will be a new url ie a file elefants.jsx in pages will be equivalent of the url myhomepage/elefants
 only other option to create url is to use node create pages method unless you want to replace gatsby routing with ie react route 
 
-## Add basic UI components and styles / React-Helm
+### Add basic UI components and styles / React-Helm
 
 React-Images for a simple way to add icons
 
@@ -33,7 +33,7 @@ import Color from "color";
 import colors from "./colors";
 ```
 
-## Error Messages 
+### Error Messages 
 
 they can sometimes not be very explanatory, sometimes the build log is more helpfull
 
@@ -41,7 +41,7 @@ see picture
 
 so its important to test while developing so its possible to backtrack or comment out the latest, and figure it what broke by trial and error
 
-## Add blog template
+### Add blog template
 
 everything in Gatsby is static so its good to learn some basic GraphQL
 
@@ -70,4 +70,4 @@ add the necessary remark plugins
 },
 ```
 
-## deployment Netlify
+### deployment Netlify

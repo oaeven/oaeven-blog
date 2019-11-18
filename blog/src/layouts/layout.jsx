@@ -57,7 +57,7 @@ const Layout = ({ children }) => {
         <Menu/>
         {/* <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-fire"></span></a> */}
         {/* <i class="material-icons">face</i> */}
-        <div style={{backgroundColor: "#EDF1F4"}} className="p-4">
+        <div style={{backgroundColor: "#EDF1F4"}} className="py-4">
             <main className="container" >{children}</main>
         </div>
         <Footer/>
