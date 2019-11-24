@@ -16,7 +16,7 @@ export default function BlogPageTemplate(data) {
     return (
         <Layout>
             <SEO title="Home" />
-            <h2>Blogposts</h2>
+            <h2>Blog Posts</h2>
             <div className="mt-3">{blogPostElements}</div>
         </Layout>
     )

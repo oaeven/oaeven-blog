@@ -5,39 +5,33 @@ import Img from "gatsby-image"
 
 const ImageService = ({ imageName }) => {
     const data = useStaticQuery(graphql`
-      fragment servicesImage on File {
-        childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+        query ImageQueries {
+            officeWorker: file(relativePath: { regex: "/office_worker/" }) {
+                childImageSharp {
+                    fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            } 
+            liveWorkCreate: file(relativePath: { regex: "/claudio-schwarz-purzlbaum-6lZgPlQ0hOU-unsplash/" }) {
+                childImageSharp {
+                    fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
+            profilePictureSmall: file(relativePath: { regex: "/profile_picture_smaller/" }) {
+                childImageSharp {
+                    fluid(maxWidth: 200, quality: 100) {
+                    ...GatsbyImageSharpFluid_withWebp
+                    }
+                }
+            }
         }
-      }
-  
-      query {
-        officeWorker: file(relativePath: { eq: "office_worker.png" }) {
-          ...servicesImage
-        }
-  
-        image2: file(relativePath: { eq: "students.jpg" }) {
-          ...servicesImage
-        }
-  
-        image3: file(relativePath: { eq: "flags.jpg" }) {
-          ...servicesImage
-        }
-  
-        image4: file(relativePath: { eq: "admission.jpg" }) {
-          ...servicesImage
-        }
-  
-        image5: file(relativePath: { eq: "support.jpg" }) {
-          ...servicesImage
-        }
-      }
     `)
-  
+
     return (
-      <Img fluid={data[imageName].childImageSharp.fluid} />
+        <Img fluid={data[imageName].childImageSharp.fluid} />
     )
 }
 

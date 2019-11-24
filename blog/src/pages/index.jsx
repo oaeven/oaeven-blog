@@ -3,21 +3,12 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../layouts/layout"
-// import { OfficeWorkerImage } from "../components/image"
 import SEO from "../components/seo"
 import ImageService from '../components/Images/imageService';
 import BlogCard from './../components/blogcard/blogCard';
 
 const IndexPage = ({data}) => {
-
-  const { allMarkdownRemark } = data // data.markdownRemark holds your post data
-  // const { frontmatter, html } = markdownRemark
-
-  // debugger;
-
-  console.log(allMarkdownRemark);
-
-  const blogPostList = allMarkdownRemark.nodes;
+  const blogPostList = data.allMarkdownRemark.nodes;
 
   const blogPostElements = blogPostList.map((blogPost, key) => {
       return (
@@ -25,8 +16,6 @@ const IndexPage = ({data}) => {
       )
   });
 
-  console.log(data);
-  
   return (
     <Layout>
       <SEO title="Home" />
@@ -36,7 +25,7 @@ const IndexPage = ({data}) => {
         <ImageService imageName="officeWorker" />
       </div>
 
-      <h5>Most recent blogposts</h5>
+      <h5>Most recent blog Posts</h5>
       <div className="mt-3">{blogPostElements}</div>
     </Layout>
   )

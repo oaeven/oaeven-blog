@@ -1,12 +1,11 @@
 import React from "react"
-// import { Link } from "gatsby"
 
 import Layout from "../layouts/layout"
 import SEO from "../components/seo"
 
 import { FaFly } from "react-icons/fa"
-import ProfilePicture from "../images/profile/profile_picture_smaller.png"
-// import ImageService from '../components/Images/imageService';
+// import ProfilePicture from "../images/profile/profile_picture_smaller.png"
+import ImageService from '../components/Images/imageService';
 
 const ContactPage = () => (
   <Layout>
@@ -14,7 +13,11 @@ const ContactPage = () => (
     <h2>Contact</h2>
     <p>Hi, my name is Øyvind Arne Evensen</p>
 
-    <img className="py-2" src={ProfilePicture} alt="Profile" />
+    {/* <img className="py-2" src={ProfilePicture} alt="Profile" /> */}
+
+    <div className="pb-3" style={{ maxWidth: "200px" }}>
+      <ImageService imageName="profilePictureSmall" alt="Profile" />
+    </div>
 
     <p>I have worked as a software developer for over 12 years and is proficient in both frontend and backend development. After being in a consultancy company for a decade and then inhouse for over a year, I have decided it was time to try the path of being an independent developer and try to go my own ways <FaFly /></p>
 
@@ -30,10 +33,9 @@ const ContactPage = () => (
 
     <h6>Contact details:</h6>
     <ul className="compact-list">
-      <li>Email adress: contact @ oaevensen.com</li>
+      <li>Email adress: oaeven @ gmail.com</li>
       <li>LinkedIn: <a href="https://www.linkedin.com/in/oaevensen/">https://www.linkedin.com/in/oaevensen/</a></li>
     </ul>
-
 
   </Layout>
 )

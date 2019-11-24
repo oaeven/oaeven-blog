@@ -1,4 +1,5 @@
 import React from "react"
+import { FaGithub } from "react-icons/fa"
 
 import Layout from "../layouts/layout"
 import SEO from "../components/seo"
@@ -7,9 +8,9 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Home" />
     <h2>Projects</h2>
-    <p>So far not so many projects</p>
+    <p>Hope to soon be able to showcase some projects here. First project is to create this blog and a Gatsby starter template based on the code to help others get started</p>
 
-    code for blog on github https://github.com/oaeven/oaeven-blog
+    <p>Code for blog on GitHub <FaGithub /> at <a href="https://github.com/oaeven/oaeven-blog"> https://github.com/oaeven/oaeven-blog</a>.</p>
   </Layout>
 )
 

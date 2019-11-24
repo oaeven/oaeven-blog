@@ -7,13 +7,11 @@ export default function BlogPostTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
-  console.log("this is a test");
-
   return (
     <Layout>
       <div>
         <h2>{frontmatter.title}</h2>
-        <h6 className="text-muted">{frontmatter.date}</h6>
+        <h5 className="text-muted pb-3">{frontmatter.date}</h5>
         <div dangerouslySetInnerHTML={{ __html: html }}
         />
       </div>
