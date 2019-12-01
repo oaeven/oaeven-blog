@@ -16,14 +16,14 @@ const AboutPage = () => (
 
     {/* <img className="py-3 pl-0 col-10 col-sm-6" src={LiveWorkCreateImage} alt="Live Work Create" /> */}
 
-    <div className="pb-3" style={{ maxWidth: "500px" }}>
-      <ImageService imageName="liveWorkCreate" alt="Live Work Create" />
+    <div className="pb-3" >
+      <ImageService imageStyle={{ maxWidth: "500px" }} imageName="liveWorkCreate" alt="Live Work Create" />
     </div>
 
     <h6>The website was created with the following stack<a href="https://jamstack.org/" target="_blank"  rel="noopener noreferrer">(JAM stack)</a></h6>
    
-    <ul className="compact-list">
-      <li>ReactJs fontend javascript library</li>
+    <ul>
+      <li>ReactJs font-end javascript library</li>
       <li>Gatsby static site generator</li>
       <li>Built and hosted on Netlify</li>
     </ul>

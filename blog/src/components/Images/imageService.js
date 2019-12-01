@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageService = ({ imageName }) => {
+const ImageService = ({ imageName, imageStyle }) => {
     const data = useStaticQuery(graphql`
         query ImageQueries {
             officeWorker: file(relativePath: { regex: "/office_worker/" }) {
@@ -31,12 +31,17 @@ const ImageService = ({ imageName }) => {
     `)
 
     return (
-        <Img fluid={data[imageName].childImageSharp.fluid} />
+        <Img style={imageStyle} fluid={data[imageName].childImageSharp.fluid} />
     )
 }
 
 ImageService.propTypes = {
     imageName: PropTypes.string.isRequired,
+    imageStyle: PropTypes.string
+}
+
+ImageService.defaultProps = {
+    imageStyle: ''
 }
 
 export default ImageService

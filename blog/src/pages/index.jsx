@@ -21,9 +21,7 @@ const IndexPage = ({data}) => {
       <SEO title="Home" />
       <h2>Øyvind Arne Evensen</h2>
       <p>Independent Fullstack Software Developer / Solution Architect</p>
-      <div style={{ maxWidth: "500px" }}>
-        <ImageService imageName="officeWorker" />
-      </div>
+      <ImageService imageStyle={{ maxWidth: "500px" }} imageName="officeWorker" />
 
       <h5>Most recent blog Posts</h5>
       <div className="mt-3">{blogPostElements}</div>

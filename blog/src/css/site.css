@@ -6,15 +6,6 @@
     font-size: 14px;
 }
 
-.compact-list {
-    list-style: circle;
-}
-
-.compact-list > li {
-    /* line-height: 0.8; */
-    margin-bottom: 0px;
-}
-
 /* spesific */
 
 .menu-vertical-align-items {
@@ -24,7 +15,7 @@
 
 .markdown-source-link {
     margin-top: -1rem;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 }
 
@@ -37,3 +28,4 @@ code {
 pre {
     padding: 8px !important;
 }
+
